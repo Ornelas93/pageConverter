@@ -25,27 +25,45 @@
 <body>
     <head>
         <!-- Menu -->
-        <div class="container" id="nav-container">
-            <div class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <nav class="navbar navbar-light bg-faded">
+            <div class="container-fluid">
                 <a href="#" class="navbar-brand">
-                    <img id="logo" src="img/rickandmorty_logo.png" alt="Rick and Morty"> Rick and Morty
+                    <img src="img/cryptocurrency.png" alt="" >
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" id="home-menu">Home</a>
-                        <a class="nav-item nav-link" id="about-menu">O desenho</a>
-                        <a class="nav-item nav-link" id="attributes-menu">Caracteristicas</a>
-                        <a class="nav-item nav-link" id="characters-menu">Personagens</a>
-                        <a class="nav-item nav-link" id="seasons-menu">Temporadas</a>
-                        <a class="nav-item nav-link" id="contact-menu">Contato</a>
-                    </div>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <div class="container-fluid" id="converter">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Conversor de moedas</h1>
                 </div>
+                <form class="row g-3">
+                    <div class="col-md-5" id="inputFirstGold">
+                        <select class="form-select">
+                            <option selected>Escolha a moeda1...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2" id="imgChange">
+                        <a href="#" class="text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="30" fill="currentColor" class="bi bi-arrow-left-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-md-5" id="inputSecondGold">
+                        <select class="form-select">
+                            <option selected>Escolha a moeda...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </form>
             </div>
         </div>
-    </head>
+    </main>
 </body>
 </html>
