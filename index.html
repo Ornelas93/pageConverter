@@ -34,36 +34,59 @@
         </nav>
     </head>
     <main>
-        <div class="container-fluid" id="converter">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Conversor de moedas</h1>
+        <div id="converter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Conversor de moedas</h1>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-5" id="inputFirstGold">
+                            <select class="form-select">
+                                <option selected>Escolha a moeda1...</option>
+                                <option>Dólar</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2" id="iconChange">
+                            <a href="#" class="text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="38" fill="currentColor" class="bi bi-arrow-left-right"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-md-5" id="inputSecondGold">
+                            <select class="form-select">
+                                <option selected>Escolha a moeda...</option>
+                                <option>Real</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5 align-self-start">
+                            <input type="number" class="form-control" id="valueInsert" placeholder="Entre com o valor" aria-label="Entre com o valor">
+                        </div>
+                        <div class="col-md-5 offset-md-2">
+                            <input type="text" class="form-control" id="valueResult" placeholder="Resultado" aria-label="Resultado" readonly>
+                        </div>
+                        <div class="col-md-2 offset-md-5">
+                            <button class="main-btn">Converter</button>
+                        </div>
+                    </form>
                 </div>
-                <form class="row g-3">
-                    <div class="col-md-5" id="inputFirstGold">
-                        <select class="form-select">
-                            <option selected>Escolha a moeda1...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2" id="imgChange">
-                        <a href="#" class="text-decoration-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="30" fill="currentColor" class="bi bi-arrow-left-right"
-                                viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-md-5" id="inputSecondGold">
-                        <select class="form-select">
-                            <option selected>Escolha a moeda...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                </form>
             </div>
         </div>
     </main>
+    <!-- Rodapé -->
+    <footer>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="#">Ornelas Desenvolvimentos</a> &copy; 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

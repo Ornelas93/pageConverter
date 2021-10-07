@@ -1,3 +1,18 @@
+/* Gerais */
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li{
+    color: #444;
+    font-size: 14px;
+}
+
 /* Menu */
 .navbar{
     background-color: #212c4e;
@@ -6,12 +21,12 @@
 }
 
 .navbar img{
-    height: 50px;
+    height: 10vh;
     width: auto;
     position: absolute;
     left: 0;
     right: 0;
-    top: 6px;
+    top: 13%;
     bottom: 0;
     margin: auto;
 }
@@ -20,28 +35,91 @@
 
 #converter{
     text-align: center;
-    width: 800px;
-    margin-top: 20px;
-    height: 375px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 60%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
 }
 
-#converter #inputFirstGold{
-    margin: auto;
+#converter h2{
+    margin-bottom: 5%;
+    color: #444;
 }
-#converter #inputSecondGold{
+
+#converter #inputFirstGold, #converter #inputSecondGold{
     margin: auto;
 }
 
-#imgChange{
+#iconChange{
    margin: auto;
 }
 
-#imgChange a{
-    transition: .5s;
-    color: black;
+#iconChange a{
+    transition: .4s;
+    color: #444;
 }
-#imgChange a:hover{
-    color: blue;
+#iconChange a:hover{
+    color: rgb(60, 191, 211);
+}
+
+#converter #valueInsert, #converter #valueResult{
+    margin-top: 10px;
+}
+
+#valueInsert::-webkit-outer-spin-button,
+#valueInsert::-webkit-inner-spin-button{
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.main-btn{
+    background-color: rgb(0, 146, 0);
+    color: #fff;
+    text-transform: uppercase;
+    width: 15vh;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .4s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #212c4e;
+    background-color: transparent;
+    border-color: rgb(0, 146, 0);
+}
+
+/* Footer - Copy */
+
+#copy-area{
+    background-color: #F1F1F1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p{
+    margin-bottom: 0;
+}
+
+#copy-area .container a{
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#copy-area .container a:hover{
+    text-decoration: none;
+    color: #3EC1D5;
 }
