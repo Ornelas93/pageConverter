@@ -4,10 +4,6 @@
     margin: 0;
 }
 
-.container{
-    padding: 70px 0;
-}
-
 p, li{
     color: #444;
     font-size: 14px;
@@ -34,36 +30,44 @@ p, li{
 /* Conversor */
 
 #converter{
-    text-align: center;
-    width: 60%;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 13vh;
+    width: auto;
+    height: 83vh;
 }
 
+#converter #center{
+    margin-top: 15%;
+
+    height: auto;
+}
 #converter h2{
     margin-bottom: 5%;
     color: #444;
+    text-align: center;
 }
 
-#converter #inputFirstGold, #converter #inputSecondGold{
+#converter #inputFirstGold, 
+#converter #inputSecondGold{
     margin: auto;
 }
 
 #iconChange{
-   margin: auto;
+   margin-bottom: 10px;
 }
 
 #iconChange a{
     transition: .4s;
     color: #444;
+    display: block;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #iconChange a:hover{
     color: rgb(60, 191, 211);
 }
 
-#converter #valueInsert, #converter #valueResult{
+#converter #valueInsert, 
+#converter #valueResult{
     margin-top: 10px;
 }
 
@@ -71,6 +75,16 @@ p, li{
 #valueInsert::-webkit-inner-spin-button{
     margin: 0;
     -webkit-appearance: none;
+}
+
+#converteButton{
+    margin: auto;
+    width: auto;
+}
+
+#converteButton button{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-btn{
@@ -85,6 +99,7 @@ p, li{
     transition: .4s;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 5%;
 }
 
 .main-btn:hover{
@@ -98,18 +113,22 @@ p, li{
 
 #copy-area{
     background-color: #F1F1F1;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    height: 100%;
+    bottom: 0;
 }
 
 #copy-area .container{
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
 #copy-area .container p{
     margin-bottom: 0;
+}
+
+#copy-area p{
+    font-size: 14px;
 }
 
 #copy-area .container a{
@@ -122,4 +141,50 @@ p, li{
 #copy-area .container a:hover{
     text-decoration: none;
     color: #3EC1D5;
+}
+
+/* Responsive */
+@media(max-width: 1280px){
+    #converter #center{
+        margin-top: 10%;
+    }
+
+    .main-btn{
+        font-size: 14px;
+        width: 20vh;
+    }
+}
+
+@media(max-width: 768px){
+    #converter #center{
+        margin-top: 30%;
+    }
+
+    .main-btn{
+        font-size: 14px;
+        width: 15vh;
+    }
+
+}
+
+@media(max-width: 425px){
+    #iconchange{
+        margin-top: 5px;
+    }
+
+    .main-btn{
+        margin-top: 50px;
+        width: 20vh;
+        font-size: 16px;
+    }
+
+    #copy-area p{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 375px){
+    #converter h2{
+        margin-bottom: 15%;
+    }
 }
