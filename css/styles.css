@@ -1,4 +1,8 @@
 /* Gerais */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .row{
     margin: 0;
@@ -10,28 +14,31 @@ p, li{
 }
 
 /* Menu */
-.navbar{
+
+#menu{
     background-color: #212c4e;
-    height: 11vh;
-    position: relative;
+    height: 100%;
 }
 
-.navbar img{
-    height: 10vh;
+#menu .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container img{
+    height: 5rem;
     width: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 13%;
-    bottom: 0;
-    margin: auto;
+    padding-top: 0.5rem;
 }
 
 /* Conversor */
 
 #converter{
     width: auto;
-    height: 83vh;
+    height: 53em;
 }
 
 #converter #center{
