@@ -32,9 +32,9 @@ html{
 
 
 .container img{
-    height: 6rem;
+    height: 13vh;
     width: auto;
-    padding-top: 0.5rem;
+    padding-top: 2vh;
 }
 
 /* Conversor */

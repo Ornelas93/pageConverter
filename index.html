@@ -41,14 +41,12 @@
                         <h2>Conversor de moedas</h1>
                     </div>
                     <form class="row g-3">
-                        <div class="col-md-5" id="inputFirstGold">
-                            <select class="form-select">
-                                <option selected>Escolha a moeda1...</option>
-                                <option>Dólar</option>
+                        <div class="col-md-5">
+                            <select class="form-select" id="firstGold">
                             </select>
                         </div>
                         <div class="col-md-2" id="iconChange">
-                            <a href="#" class="text-decoration-none">
+                            <a href="#" class="text-decoration-none" onclick="changeCoins()">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-right"
                                     viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -56,10 +54,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-md-5" id="inputSecondGold">
-                            <select class="form-select">
-                                <option selected>Escolha a moeda...</option>
-                                <option>Real</option>
+                        <div class="col-md-5">
+                            <select class="form-select" id="secondGold">
                             </select>
                         </div>
                         <div class="col-md-5 align-self-start">
@@ -69,7 +65,7 @@
                             <input type="text" class="form-control" id="valueResult" placeholder="Resultado" aria-label="Resultado" readonly>
                         </div>
                         <div class="col-md-2 offset-md-5" id="converteButton">
-                                <button class="main-btn">Converter</button>
+                                <button type="button" onclick="clickConverter('firstGold','secondGold')" class="main-btn">Converter</button>
                         </div>
                     </form>
                 </div>
